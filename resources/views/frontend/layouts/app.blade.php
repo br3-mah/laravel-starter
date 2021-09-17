@@ -21,6 +21,11 @@
     <link rel="shortcut icon" href="{{asset('img/favicon.png')}}">
     <link rel="icon" type="image/ico" href="{{asset('img/favicon.png')}}" />
 
+	<!-- Video Player -->
+	<!-- <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" /> -->
+	<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/>
+	
+	<link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -468,6 +473,7 @@ body {
         });
     });
 <script>
+<script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 @stack('after-scripts')
 
 </html>

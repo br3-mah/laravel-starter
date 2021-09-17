@@ -4,12 +4,12 @@
 
 @section('content')
 
-<section class="section-header bg-primary text-white pb-7 pb-lg-11">
+<!-- <section class="section-header bg-primary text-white pb-7 pb-lg-11">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center">
                 <h1 class="display-2 mb-4">
-                    {{ __("Tags") }}
+                    {{ __("TV") }}
                 </h1>
                 <p class="lead">
                     The list of tags.
@@ -20,9 +20,28 @@
         </div>
     </div>
     <div class="pattern bottom"></div>
+</section> -->
+<section class="">
+<!-- <video class="vjs-matrix video-js"> -->
+<video
+    id="my-video"
+    class="video-js  vjs-default-skin"
+    controls
+    preload="auto"
+    width="auto"
+    height="600"
+    poster="https://deadline.com/wp-content/uploads/2021/09/Nighmare-alley.jpg?w=681&h=383&crop=1"
+    data-setup="{
+        'liveui': true,
+        'aspectRatio':'640:267', 
+        'playbackRates': [1, 1.5, 2]
+    }"
+  >
+    <source src="/tv/NightmareAlley.mp4" type="video/mp4" />
+    <source src="/tv/NightmareAlley.webm" type="video/webm" />
+  </video>
 </section>
-
-<section class="section section-lg line-bottom-light">
+<!-- <section class="section section-lg line-bottom-light">
     <div class="container mt-n7 mt-lg-n12 z-2">
         <div class="row">
             @foreach ($$module_name as $$module_name_singular)
@@ -52,6 +71,6 @@
             {{$$module_name->links()}}
         </div>
     </div>
-</section>
+</section> -->
 
 @endsection

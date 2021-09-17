@@ -224,35 +224,6 @@
             
         </div>
     </div>
-    
-    <div>
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li style="background-image: url('https://lumiere-a.akamaihd.net/v1/images/p_shangchi_disneyplus_21155_c1b60b55.jpeg'); background-size: cover; height:500px"  class="glide__slide">
-                            <!-- <div></div> -->
-                        </li>
-                        <li style="background-image: url('https://q7h8x4g8.stackpathcdn.com/wp-content/uploads/2017/07/GettyImages-1225642179-1024x696.jpg'); background-size: cover; height:500px"  class="glide__slide">
-                            <!-- <div></div> -->
-                        </li>
-                        <li style="background-image: url('https://cdn-b.william-reed.com/var/wrbm_gb_hospitality/storage/images/5/9/1/4/844195-1-eng-GB/Sky-Sports-to-exclusively-air-11-Formula-One-races_wrbm_large.jpg'); background-size: cover; height:500px"  class="glide__slide">
-                            <!-- <div></div> -->
-                        </li>
-                        <li style="background-image: url('https://ichef.bbci.co.uk/images/ic/1200x675/p07kfjyp.jpg'); background-size: cover; height:500px"  class="glide__slide">
-                            <!-- <div></div> -->
-                        </li>
-                        <li style="background-image: url('https://d.newsweek.com/en/full/1787416/mitchells-vs-machines.jpg?w=790&f=c9c477d32d90dbd2d7df4b53f722f7bb'); background-size: cover; height:500px"  class="glide__slide">
-                            <!-- <div></div> -->
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                </div>
-            </div>
-        </div>
 
 </section>
 
