@@ -221,7 +221,7 @@ class UserController extends Controller
             $data_array = Arr::add($data_array, 'email_verified_at', null);
         }
 
-        $$module_name_singular = User::create($data_array);
+        $module_name_singular = User::create($data_array);
 
         $roles = $request['roles'];
         $permissions = $request['permissions'];

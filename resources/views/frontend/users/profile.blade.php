@@ -43,10 +43,12 @@
                     </div>
                     <div class="card-body d-flex flex-column justify-content-between col-auto py-4 p-lg-5">
 
-                        @if($userprofile->bio)
-                        <h5 class="description">
-                            {{$userprofile->bio}}
-                        </h5>
+                        @if(!empty($userprofile))
+                            @if($userprofile->bio)
+                            <h5 class="description">
+                                {{$userprofile->bio}}
+                            </h5>
+                            @endif
                         @endif
 
                         <div class="table-responsive">
@@ -71,7 +73,7 @@
                                         // [ 'name' => 'last_login', 'type' => 'datetime' ],
                                         // [ 'name' => 'last_ip' ],
                                     ]; ?>
-                                    @foreach ($fields_array as $field)
+                                    @forelse ($fields_array as $field)
                                         <tr>
                                             @php
                                             $field_name = $field['name'];
@@ -101,10 +103,12 @@
                                                 <a href="{{ $userprofile->$field_name }}" target="_blank">{{ $userprofile->$field_name }}</a>
                                             </td>
                                             @else
-                                            <td>{{ $userprofile->$field_name }}</td>
+                                            <td>{{ $userproƒfile->$field_name }}</td>
                                             @endif
                                         </tr>
-                                    @endforeach
+                                    @empty
+
+                                    @endforelse
                                 </tbody>
                             </table>
                         </div>
